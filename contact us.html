@@ -1,0 +1,219 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discriopatin" content="">
+    <meta name="keywords" content="">
+    <title>Contact</title>
+</head>
+
+<body>
+
+
+    <style>
+        header {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            text-decoration: none;
+            color: white;
+            font-size: 2em;
+            font-weight: 900;
+        }
+
+        header nav a {
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: white;
+            padding-left: 15px;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            font-size: 3em;
+            font-weight: 900;
+            color: rgb(7, 0, 0);
+            margin-left: 220px;
+        }
+
+        label {
+            padding: 15px;
+            padding-right: 30px;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        .input {
+            display: flex;
+            padding: 10px;
+            margin: 20px;
+            justify-content: center;
+            margin-left: 60px;
+            width: 100%;
+        }
+
+        .button {
+            text-decoration: none;
+            color: white;
+            background-color: rgb(10, 10, 10);
+            font-size: 1.5em;
+            font-weight: 900;
+            padding: 15px;
+            border-radius: 15px;
+            margin-left: 250px;
+        }
+
+        .textarea {
+            display: flex;
+            padding: 10px;
+            margin: 20px;
+            justify-content: center;
+            margin-left: 60px;
+            width: 100%;
+            margin-bottom: 70px;
+
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            color: rgb(8, 0, 0);
+        }
+
+        .img {
+            width: 60%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: url(support.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        
+        }
+        @media (max-width :400px){
+    body {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    header nav a {
+        font-size: 0.7em;
+    }
+
+    .button {
+         
+            font-size: 1.5em;
+            font-weight: 900;
+            padding: 15px;
+            border-radius: 15px;
+            margin-left: 180px;
+        }
+
+        .textarea {
+            display: flex;
+            padding: 10px;
+            margin: 20px;
+            justify-content: center;
+            margin-left: 60px;
+            width: 70%;
+            margin-bottom: 70px;
+
+        }
+
+        .input {
+            display: flex;
+            padding: 10px;
+            margin: 20px;
+            justify-content: center;
+            margin-left: 60px;
+            width: 70%;
+        }
+        .title {
+            display: flex;
+            justify-content: center;
+            font-size: 3em;
+            font-weight: 900;
+            color: rgb(7, 0, 0);
+            margin-left: 0px;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: rgb(8, 0, 0);
+        }
+        .img {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: url(support.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        
+        }
+}
+    </style>
+
+    <script>
+        function valid() {
+            var mas = document.getElementById("E-mail").value;
+            var phone = document.getElementById("Phone").value;
+            var email= document.getElementById("Massage").value;
+            if (mas == "") {
+                alert("please enter email");
+            }
+            if (phone == "") {
+                alert("please enter phone");
+            }
+            if (email== "") {
+                alert("please enter message");
+            }
+
+            if (mas != "" && phone != ""  &&email != "") {
+                alert("sussc")
+            }
+        }
+    </script>
+    <header>
+        <a href="#" class="logo">scooba diving</a>
+        <nav>
+            <a href="index.html">about us </a>
+            <a href="service.html">services </a>
+            <a href="offers.html">offers </a>
+            <a href="PRODECT.HTML">product  </a>
+            <a href="contact us.html">contact us </a>
+        </nav>
+    </header>
+
+    <section class="main">
+
+        <div>
+            <h1 class="title">Contact</h1>
+            <label>message</label>
+            <input class="input" type="text" id="E-mail"> <br>
+            <label>Phone </label>
+            <input class="input" type="text" id="Phone"><br>
+            <label>E-mail</label>
+            <textarea class="textarea" cols="20" rows="5" id="Massage"></textarea>
+            <a class="button" href="#" onclick="valid()">send</a>
+        </div>
+        <div class="img"></div>
+    </section>
+
+
+</body>
+
+</html>
